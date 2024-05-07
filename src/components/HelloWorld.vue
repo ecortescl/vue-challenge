@@ -20,7 +20,7 @@ defineProps({
   </div>
 </template>
 
-<style scoped>
+<style>
 h1 {
 
   background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
@@ -28,7 +28,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  font-size: 55px;
+  font-size: 60px;
   font-weight: bolder;
   text-align: center;
 
@@ -40,6 +40,6 @@ h3 {
 
 .greetings h1,
 .greetings h3 {
-  text-align: center;
+  text-align: left;
 }
 </style>

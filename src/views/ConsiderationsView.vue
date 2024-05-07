@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Consideraciones</h3>
+    <h2>Consideraciones</h2>
     <ul>
       <li>Puedes utilizar CSS, Bootstrap o Tailwind.</li>
       <li>Puedes utilizar Axios o Fetch para consumir la API. También puedes configurar el consumo de la API dentro de
