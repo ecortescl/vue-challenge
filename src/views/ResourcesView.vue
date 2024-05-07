@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Material</h3>
+    <h2>Recursos</h2>
     <ul>
       <li>Página oficial de Vue.js: <a href="https://vuejs.org" target="_blank">https://vuejs.org</a></li>
       <li>API para consultar créditos hipotecarios:

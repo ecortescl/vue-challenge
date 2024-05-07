@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import Whatsapp from './components/Whatsapp.vue';
 </script>
 
 <template>
@@ -16,7 +17,7 @@ import HelloWorld from './components/HelloWorld.vue'
       </nav>
     </div>
   </header>
-
+  <Whatsapp phoneNumber="+56950073523"></Whatsapp>
   <transition name="fade" mode="out-in">
     <router-view></router-view>
   </transition>
