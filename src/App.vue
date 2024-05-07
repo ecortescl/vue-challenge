@@ -10,9 +10,8 @@ import HelloWorld from './components/HelloWorld.vue'
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
       <nav>
-        <RouterLink to="/">Info</RouterLink>
-        <RouterLink to="/requerimientos">Requisitos</RouterLink>
-        <RouterLink to="/criterios">Criterios</RouterLink>
+        <RouterLink to="/">Indicaciones</RouterLink>
+        <RouterLink to="/consideraciones">Consideraciones</RouterLink>
         <RouterLink to="/recursos">Recursos</RouterLink>
       </nav>
     </div>
@@ -33,6 +32,7 @@ import HelloWorld from './components/HelloWorld.vue'
 .fade-leave-to {
   opacity: 0;
 }
+
 header {
   line-height: 1.5;
   max-height: 100vh;

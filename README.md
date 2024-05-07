@@ -1,61 +1,82 @@
-# Vue Challenge 2024
+# Vue Challenge 2024 🏡💰
 
-En este desafío, el candidato deberá crear un simulador de crédito hipotecario utilizando Vue.js. La aplicación permitirá al usuario ingresar información como el monto del préstamo, la tasa de interés y el plazo, y mostrará el resultado del cálculo de las cuotas mensuales. Además, se consumirá una API que proporciona datos de créditos hipotecarios para mostrar opciones predefinidas al usuario.
+¡Bienvenido al emocionante desafío de Vue! 🚀 En este desafío, tendrás la oportunidad de crear un increíble simulador de crédito hipotecario utilizando el poderoso framework Vue.js. 💪
 
-## Requisitos
+Imagina que eres un mago de las finanzas 🧙‍♂️ y tu misión es ayudar a las personas a hacer realidad sus sueños de tener su propia casa. 🏠 Con tu habilidad en Vue.js, crearás una aplicación que les permitirá ingresar información como el monto del préstamo, la tasa de interés y el plazo, y ¡voilà! 🪄 Les mostrarás el resultado del cálculo de las cuotas mensuales.
 
-<ul>
-        <li>Crear un proyecto de Vue.js utilizando Vue CLI o Vite.</li>
-        <li>Crear los siguientes componentes:
-            <ul>
-                <li>LoanForm: Componente que permite al usuario ingresar los datos del préstamo.</li>
-                <li>LoanResult: Componente que muestra el resultado del cálculo de las cuotas mensuales.</li>
-                <li>LoanOptions: Componente que muestra opciones predefinidas de créditos hipotecarios obtenidas desde una API.</li>
-            </ul>
-        </li>
-        <li>Utilizar el hook <code>mounted</code> para obtener las opciones de créditos hipotecarios desde una API externa al cargar la aplicación.</li>
-        <li>Implementar la funcionalidad para calcular las cuotas mensuales según los datos ingresados por el usuario.</li>
-        <li>Mostrar el resultado del cálculo en el componente LoanResult, incluyendo el monto de la cuota mensual y el total a pagar.</li>
-        <li>Permitir al usuario seleccionar una opción predefinida de crédito hipotecario desde el componente LoanOptions y cargar los datos en el formulario.</li>
-        <li>Utilizar CSS para dar estilo a la interfaz de usuario, asegurándose de que sea atractiva y fácil de usar.</li>
-        <li>Mostrar un skeleton loader mientras se obtienen las opciones de créditos desde la API externa.</li>
-        <li>Implementar manejo de errores básico para la obtención de datos desde la API externa y para el cálculo de las cuotas.</li>
-        <li>Escribir código limpio, legible y bien estructurado, siguiendo las mejores prácticas de Vue.js.</li>
-</ul>
+Pero eso no es todo, ¡también te conectarás con una API mágica! 🌟 Esta API te proporcionará datos de créditos hipotecarios para que puedas mostrar opciones predefinidas a los usuarios y facilitarles la vida. 😊
 
-## Instrucciones
+## Instrucciones 📝
 
 <ul>
-        <li> Crear repositorio en github o gitlab público</li>
-        <li> Crea un nuevo proyecto de Vue.js utilizando Vue CLI o Vite.</li>
-        <li> Crea los componentes mencionados en los requisitos.</li>
-        <li> Implementa la funcionalidad de obtención de opciones de créditos hipotecarios desde una API externa.</li>
-        <li> Agrega la funcionalidad para calcular las cuotas mensuales según los datos ingresados por el usuario.</li>
-        <li> Muestra el resultado del cálculo en el componente LoanResult.</li>
-        <li> Permite al usuario seleccionar una opción predefinida de crédito hipotecario y carga los datos en el formulario.</li>
-        <li> Aplica estilos CSS para mejorar la apariencia de la interfaz de usuario.</li>
-        <li> Implementa un skeleton loader mientras se obtienen las opciones de créditos desde la API externa.</li>
-        <li> Realiza pruebas exhaustivas para garantizar que la aplicación funcione correctamente.</li>
-        <li> Sube tu solución a un repositorio de GitHub y proporciona el enlace.</li>
+  <li>Crea un nuevo repositorio público donde puedas mostrar tu talento al mundo. 🌍</li>
+  <li>Utiliza el asombroso Vue 3 con Vite para configurar tu proyecto dentro del repositorio. ⚡</li>
+  <li>Crea los componentes <code>Form</code>, <code>Result</code> y <code>Card</code> para darle vida a tu aplicación. 🔧</li>
 </ul>
 
-## Criterios de Evaluación
+### Componente Form 📝
+
+En este componente, tendrás que crear una fórmula mágica ✨ que tome los datos proporcionados por el usuario y calcule el dividendo mensual. Luego, multiplica el resultado por 4 para obtener el sueldo requerido. ¡Así de fácil! 😄
+
+El componente debe recibir la siguiente información:
 
 <ul>
-        <li>Funcionalidad: La aplicación debe cumplir con todos los requisitos mencionados.</li>
-        <li>Estructura del código: El código debe estar bien estructurado, ser legible y seguir las mejores prácticas de Vue.js.</li>
-        <li>Uso de componentes: Se evaluará la creación y utilización adecuada de componentes de Vue.js.</li>
-        <li>Manejo de estado: Se evaluará el uso apropiado del estado de Vue.js para gestionar los datos del formulario y los resultados.</li>
-        <li>Integración con API: Se evaluará la capacidad para obtener y utilizar datos desde una API externa.</li>
-        <li>Estilos CSS: Se evaluará la aplicación de estilos CSS para lograr una interfaz atractiva y fácil de usar.</li>
-        <li>Skeleton loader: Se evaluará la implementación de un skeleton loader mientras se cargan las opciones de créditos.</li>
-        <li>Manejo de errores: Se evaluará el manejo básico de errores al obtener datos desde la API externa y durante el cálculo de las cuotas.</li>
+  <li>Valor Propiedad (en UF) 🏠</li>
+  <li>Pie (en UF) 💰</li>
+  <li>Tasa de Interés (por defecto 5%) 📈</li>
+  <li>Plazo (en años) 📅</li>
 </ul>
 
-## Recursos Adicionales
+### Componente Result 📊
 
-- [Documentación oficial de Vue.js](https://vuejs.org/)
-- [Guía de estilos de Vue.js](https://vuejs.org/v2/style-guide/)
-- [Repositorio del desafío](https://github.com/tu-usuario/simulador-credito-hipotecario)
+Aquí es donde mostrarás el resultado del cálculo del dividendo mensual y el sueldo requerido. ¡Que los números hablen por sí mismos! 💬
 
-¡Buena suerte con el desafío!
+### Consumo de API 🌐
+
+¡Prepárate para conectarte con la API mágica! 🔮 Esta API te brindará información sobre créditos bancarios y tiene los siguientes parámetros:
+
+<ul>
+  <li><code>valorPropiedad</code> (Monto en UF) 💰</li>
+  <li><code>Pie</code> (10 a 100%) 🍰</li>
+  <li><code>Tiempo</code> (5 a 30 años) ⏳</li>
+  <li><code>Dfl2</code> (true/false) ✅❌</li>
+</ul>
+
+La API te devolverá todos los créditos hipotecarios de los bancos, incluyendo la tasa de interés, el dividendo, los costos legales y el nombre del banco. ¡Es como tener un asesor financiero a tu disposición! 🤵💼
+
+### Componente Card 🃏
+
+Muestra los resultados de la API en componentes <code>Card</code> de forma dinámica, creando una card por cada resultado. ¡Haz que se vea mágico! ✨
+
+### Despliegue 🚀
+
+Sube tu proyecto a GitHub y despliégalo en Vercel o Cloudflare para que el mundo pueda ver tu increíble creación. 🌍🎉
+
+## Consideraciones 🤔
+
+<ul>
+  <li>Puedes utilizar CSS, Bootstrap o Tailwind para darle estilo a tu aplicación. ¡Haz que se vea espectacular! 🎨</li>
+  <li>Utiliza Axios o Fetch para consumir la API. También puedes configurar el consumo de la API dentro de un componente o crear un servicio dedicado. ¡Tú decides! 🤓</li>
+  <li>Utiliza metodologías de clean code y organiza tu código de manera legible y fácil de comprender. ¡Que tu código brille! ✨</li>
+  <li>Todas las variables y funciones deben estar en inglés y tener comentarios explicativos simples y precisos. ¡Haz que tu código hable por sí mismo! 💬</li>
+</ul>
+
+## Recursos 📚
+
+<ul>
+  <li>Página oficial de Vue.js: <a href="https://vuejs.org" target="_blank">https://vuejs.org</a> 🌐</li>
+  <li>API para consultar créditos hipotecarios: 🔍
+    <ul>
+      <li>Ruta GET: <code>https://api.hipotecarios.info/creditos/?valorPropiedad=2000&Pie=30&Tiempo=20&Dfl2=true</code> 🌐</li>
+      <li>Esta API no requiere apikey, solo necesitas enviar los parámetros mencionados anteriormente. Ten en cuenta los parámetros del API: valorPropiedad (Monto en UF) | Pie (10 a 100%) | Tiempo (5, 30 años) | Dfl2 (true / false) 📝</li>
+    </ul>
+  </li>
+  <li>Ejemplos de simuladores de créditos hipotecarios: 🏠💰
+    <ul>
+      <li><a href="https://besalcoinmobiliaria.cl/Los-leones" target="_blank">https://besalcoinmobiliaria.cl/Los-leones</a> 🦁</li>
+      <li><a href="https://isacorp.cl/dubl%C3%A9-almeyda/" target="_blank">https://isacorp.cl/dubl%C3%A9-almeyda/</a> 🏙️</li>
+    </ul>
+  </li>
+</ul>
+
+¡Buena suerte con el desafío! 🍀 Estoy seguro de que crearás algo asombroso. 🌟 ¡Que la fuerza de Vue esté contigo! 💪😄
