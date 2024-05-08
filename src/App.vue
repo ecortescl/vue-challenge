@@ -14,8 +14,9 @@ import Whatsapp from './components/Whatsapp.vue';
         <RouterLink to="/">Indicaciones</RouterLink>
         <RouterLink to="/consideraciones">Consideraciones</RouterLink>
         <RouterLink to="/recursos">Recursos</RouterLink>
+        <RouterLink class="btn-challenge" to="/enviar">Enviar Desafio</RouterLink>
       </nav>
-      <RouterLink class="btn-challenge" to="/enviar">Enviar Desafio</RouterLink>
+      
     </div>
   </header>
   <Whatsapp phoneNumber="+56950073523"></Whatsapp>
@@ -48,12 +49,16 @@ header {
   width: 100%;
   background: #41B883;
   border-radius: 5px;
+  font-size:18px;
   padding:10px;
-  color:#000;
+  color:#000  !important;
   font-weight: bolder;
   margin-bottom:50px;
   cursor: pointer;
+  margin-top:10px
 }
+
+
 
 nav {
   width: 100%;
@@ -67,13 +72,13 @@ nav a.router-link-exact-active {
 }
 
 nav a.router-link-exact-active:hover {
-  background-color: transparent;
+
 }
 
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  
 }
 
 nav a:first-of-type {
@@ -105,6 +110,12 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
+  }
+
+}
+@media (max-width: 1023px) {
+  .btn-challenge {
+    margin-top: 10px;
   }
 }
 </style>

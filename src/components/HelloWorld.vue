@@ -27,7 +27,6 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   font-size: 60px;
   font-weight: bolder;
   text-align: center;
@@ -41,5 +40,11 @@ h3 {
 .greetings h1,
 .greetings h3 {
   text-align: left;
+}
+@media (max-width: 1024px) {
+  h1{
+    font-size:40px !important;
+    text-align: center;
+  }
 }
 </style>

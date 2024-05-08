@@ -173,4 +173,10 @@ button {
   margin-bottom:50px;
   cursor: pointer;
 }
+
+@media (max-width: 1023px) {
+  .challenge-form {
+    width: 100%;
+  }
+}
 </style>
