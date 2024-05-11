@@ -14,7 +14,7 @@
         repoUrl="https://github.com/Dalvae/simulador-creditos"
         
       />
-      <RepoCard repoUrl="https://github.com/rayoconico/tarea" />
+      <RepoCard repoUrl="https://github.com/pipevera/desafio-inmobiliario" />
     </div>
   </div>
 </template>
