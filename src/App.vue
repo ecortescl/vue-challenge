@@ -1,22 +1,32 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-import Whatsapp from './components/Whatsapp.vue';
+import { RouterLink, RouterView } from "vue-router";
+import HelloWorld from "./components/HelloWorld.vue";
+import Whatsapp from "./components/Whatsapp.vue";
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img
+      alt="Vue logo"
+      class="logo"
+      src="@/assets/logo.svg"
+      width="125"
+      height="125"
+    />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-      <nav style="text-align:center">
+      <nav style="text-align: center">
         <RouterLink to="/">Indicaciones</RouterLink>
         <RouterLink to="/consideraciones">Consideraciones</RouterLink>
         <RouterLink to="/recursos">Recursos</RouterLink>
-        <RouterLink class="btn-challenge" to="/enviar">Enviar Desafio</RouterLink>
+        <RouterLink class="btn-challenge" to="/enviar"
+          >Enviar Desafio</RouterLink
+        >
+        <RouterLink class="btn-participantes" to="/participantes"
+          >Participantes</RouterLink
+        >
       </nav>
-      
     </div>
   </header>
   <Whatsapp phoneNumber="+56950073523"></Whatsapp>
@@ -45,20 +55,30 @@ header {
   display: block;
   margin: 0 auto 2rem;
 }
-.btn-challenge{
+.btn-challenge {
   width: 100%;
-  background: #41B883;
+  background: #41b883;
   border-radius: 5px;
-  font-size:18px;
-  padding:10px;
-  color:#000  !important;
+  font-size: 18px;
+  padding: 10px;
+  color: #000 !important;
   font-weight: bolder;
-  margin-bottom:50px;
   cursor: pointer;
-  margin-top:10px
+  margin-top: 10px;
 }
 
+.btn-participantes {
+  width: 100%;
+  background: #3b7eda;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+  color: #000 !important;
+  font-weight: bolder;
 
+  cursor: pointer;
+  margin-top: 10px;
+}
 
 nav {
   width: 100%;
@@ -71,14 +91,11 @@ nav a.router-link-exact-active {
   color: var(--color-text);
 }
 
-nav a.router-link-exact-active:hover {
 
-}
 
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  
 }
 
 nav a:first-of-type {
@@ -111,7 +128,6 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-
 }
 @media (max-width: 1023px) {
   .btn-challenge {
